@@ -23,43 +23,62 @@ const PageTelechareger = () => {
         </div>
 
         {/* Section Form : */}
-        <form className="flex flex-col gap-[20px] p-5 justify-center  mx-auto">
+        <form className="flex flex-col gap-[40px] p-5 justify-center  mx-auto">
           {/* inputs */}
-          <div className="w-[324px] h-[41px] md:w-[450] flex flex-col">
+
+          <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
               type="text"
-              placeholder="Nom*"
-              className=" w-full h-full outline-none text-[18px] md:text-[26px] leading-[26px] md:leading-[35px] font-light text-Textcolor border border-t-0 border-l-0 border-r-0 border-b-2 border-Textcolor"
+              required
+              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
+            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+              Nom*
+            </label>
           </div>
-          <div className="w-[324px] h-[41px] md:w-[450] flex flex-col">
+
+          <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
               type="text"
-              placeholder="Prénome*"
-              className=" w-full h-full outline-none text-[18px] md:text-[26px] leading-[26px] md:leading-[35px] font-light text-Textcolor border border-t-0 border-l-0 border-r-0 border-b-2 border-Textcolor"
+              required
+              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
+            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+            Prénome*
+            </label>
           </div>
-          <div className="w-[324px] h-[41px] md:w-[450] flex flex-col">
+
+          <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
-              type="email"
-              placeholder="Mail*"
-              className=" w-full h-full outline-none text-[18px] md:text-[26px] leading-[26px] md:leading-[35px] font-light text-Textcolor border border-t-0 border-l-0 border-r-0 border-b-2 border-Textcolor"
+              type="text"
+              required
+              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
+            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+            Mail*
+            </label>
           </div>
-          <div className="w-[324px] h-[41px] md:w-[450] flex flex-col">
+          <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
               type="number"
-              placeholder="Téléphone*"
-              className=" w-full h-full outline-none text-[18px] md:text-[26px] leading-[26px] md:leading-[35px] font-light text-Textcolor border border-t-0 border-l-0 border-r-0 border-b-2 border-Textcolor"
+              required
+              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
+            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+            Téléphone*
+            </label>
           </div>
-          <div className="w-[324px] h-[41px] md:w-[450] flex flex-col">
+          <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
-              type="text"
-              placeholder="Code postal*"
-              className=" w-full h-full outline-none text-[18px] md:text-[26px] leading-[26px] md:leading-[35px] font-light text-Textcolor border border-t-0 border-l-0 border-r-0 border-b-2 border-Textcolor"
+              type="number"
+              required
+              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
+            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+            Code postal*
+            </label>
           </div>
+         
           {/* parte 2 */}
           <div className="flex flex-col gap-[12px] md:gap-[14px]">
             <span className="font-light text-[10px] leading-[10px] md:text-[12px] md:leading-[20px] ">
@@ -86,7 +105,7 @@ const PageTelechareger = () => {
         <DecoverSection />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PageTelechareger
+export default PageTelechareger;

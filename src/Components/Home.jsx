@@ -270,7 +270,7 @@ const Home = () => {
               bains, des bibliothèques et des dressings durables, faits de
               lignes modernes et bâtis avec les meilleurs matériaux.
             </p>
-            <button className="text-xs sm:text-sm md:text-base tracking-wide font-normal w-40 sm:w-48 md:w-56 h-10 md:h-12 bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
+            <button className="text-xs sm:text-sm md:text-base tracking-wide font-normal w-40 sm:w-48 md:w-56 h-10 md:h-12 px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
               Découvrir notre savoir-faire
             </button>
           </div>
@@ -373,7 +373,7 @@ const Home = () => {
           <h1>Un idéal que l’on poursuit.</h1>
           <h1>Un sentiment que vous vivez.</h1>
         </div>
-        <button className="bg-Primary text-white w-[180px] md:w-[191px] text-[12px] h-[40px] rounded-full hover:bg-HoverColor transition-transform duration-300 ease-in-out">
+        <button className="bg-Primary text-white w-[180px] md:w-[191px] text-[12px] h-[40px] rounded-full px-[20px] py-[10px] hover:bg-HoverColor transition-transform duration-300 ease-in-out">
           PRENDRE RENDEZ-VOUS
         </button>
       </div>

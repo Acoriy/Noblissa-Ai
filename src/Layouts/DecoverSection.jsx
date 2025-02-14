@@ -14,7 +14,7 @@ const DecoverSection = () => {
           <h1 className="text-[45px] sm:text-[50px] md:text-[60px] lg:text-6xl font-normal font-bodoni leading-tight md:leading-snug text-Textcolor min-w-[330px] md:w-[534px] mx-auto">
             Découvrez tous nos univers dans notre nouveau catalogue.
           </h1>
-          <button className="font-normal text-xs md:text-sm tracking-wide text-white w-[225px] md:w-[245px] h-10 md:h-12 rounded-full bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out">
+          <button className="font-normal text-xs md:text-sm tracking-wide text-white w-[225px] md:w-[245px] h-10 md:h-12 rounded-full bg-Primary px-[20px] py-[10px] hover:bg-HoverColor transition-colors duration-300 ease-in-out">
             TÉLÉCHARGER LE CATALOGUE
           </button>
         </div>
