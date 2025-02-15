@@ -43,10 +43,10 @@ const Concepteure = () => {
 
           {/* Boutons */}
           <div className="flex flex-col sm:flex-row gap-[20px] mx-auto sm:mx-0">
-            <button className="px-[20px] py-[10px] rounded-full text-[#fff] text-[12px] sm:text-[14px] bg-Primary hover:bg-HoverColor tracking-[3%] font-normal">
+            <button className="w-[200px] h-[40px] px-[20px]  py-[10px] rounded-full text-[#fff] text-[12px] sm:text-[14px] bg-Primary hover:bg-HoverColor tracking-[3%] font-normal">
               PRENDRE RENDEZ-VOUS
             </button>
-            <button className="rounded-full text-[12px] sm:text-[14px] border border-Primary border-x-2 border-y-2 text-Primary tracking-[3%] px-[20px] py-[10px] font-normal hover:text-HoverColor hover:border-HoverColor">
+            <button className="w-[200px] h-[40px] px-[10px] py-[10px] rounded-full text-[12px] sm:text-[14px] border border-Primary border-x-2 border-y-2 text-Primary tracking-[3%]  font-normal hover:text-HoverColor hover:border-HoverColor">
               TROUVER VOTRE MAGASIN
             </button>
           </div>
