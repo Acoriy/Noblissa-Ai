@@ -7,7 +7,7 @@ const Concepteure = () => {
   return (
     <div className="w-full h-auto p-[20px] flex flex-col md:flex-row items-center gap-[40px] relative md:pl-[40px]">
       {/* Section des images */}
-      <div className="flex flex-col md:flex-row gap-[20px] md:w-[630px] md:h-[630px] w-full justify-center items-center">
+      <div className="flex flex-row gap-[20px] md:w-[630px] md:h-[630px] w-full justify-center items-center">
         <div className="w-[170px] h-[273px] md:w-[305px] md:h-[491px] relative">
           <img
             src={cons3}
