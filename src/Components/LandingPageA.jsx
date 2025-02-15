@@ -39,8 +39,10 @@ const LandingPageA = () => {
             </p>
           </div>
 
-          {/* 🔍 Section de recherche */}
+          {/* Section de recherche */}
+          <div className="mx-auto w-full">
           <SearchWithFilter TitleBtn={TitleBtn} />
+        </div>
         </div>
       </div>
 

@@ -16,7 +16,9 @@ const LandingPageSuggestions = () => {
         <Textes/>
       </div>
       {/* Section 3 */}
-      <SearchWithFilter TitleBtn = {TitleBtn}/>
+      <div className="mx-auto w-full">
+          <SearchWithFilter TitleBtn={TitleBtn} />
+        </div>
       {/* Section 4 */}
       <DecoverSection/>
 

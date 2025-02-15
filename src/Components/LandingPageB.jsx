@@ -30,7 +30,9 @@ const LandingPageB = () => {
       <div className="flex flex-col gap-[10px] mx-auto"></div>
       
       {/* search avec filtre */}
-      <SearchWithFilter TitleBtn={TitleBtn} />
+      <div className="mx-auto w-full">
+          <SearchWithFilter TitleBtn={TitleBtn} />
+        </div>
 
       <DecoverSection />
     </div>

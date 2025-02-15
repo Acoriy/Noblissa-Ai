@@ -63,7 +63,10 @@ const LandingPageImages = () => {
         </section>
 
         {/* DropDown section */}
-        <SearchWithFilter TitleBtn={TitleBtn} />
+        <div className="mx-auto w-full">
+          <SearchWithFilter TitleBtn={TitleBtn} />
+        </div>
+        
         {/* discover section */}
         <DecoverSection />
       </div>
