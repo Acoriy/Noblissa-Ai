@@ -23,7 +23,7 @@ const PageTelechareger = () => {
         </div>
 
         {/* Section Form : */}
-        <form className="flex flex-col gap-[40px] p-5 justify-center  mx-auto">
+        <form className="flex flex-col gap-[40px] p-5 justify-center  mx-auto pb-[20px] md:pb-0">
           {/* inputs */}
 
           <div className="relative w-[324px] h-[41px] md:w-[450px]">
