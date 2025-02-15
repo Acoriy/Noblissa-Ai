@@ -1,4 +1,3 @@
-// import { IoIosArrowDown } from "react-icons/io";
 import HeaderPage from "../Layouts/HeaderPage";
 import DecoverSection from "../Layouts/DecoverSection";
 
@@ -16,15 +15,17 @@ const DataImages = [Image1, Image2, Image3, Image4];
 const LandingPageImages = () => {
   const TitleBtn = "GÉNÉRER PLUS D’IMAGES";
   const [activeTab, setActiveTab] = useState("Images créées");
+
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col min-h-screen">
       <HeaderPage />
+
       {/* contenu de la page */}
-      <div className="flex flex-col gap-[15px]">
+      <div className="flex flex-col gap-[15px] flex-grow">
         {/* section 1 : imaginons */}
         <Imaginion />
 
-        <section className="mx-auto flex flex-col items-center gap-6 pt-6 w-full px-4 ">
+        <section className="mx-auto flex flex-col items-center gap-6 pt-6 w-full px-4">
           {/* En-tête avec les titres */}
           <div className="flex flex-row flex-wrap w-full justify-center gap-4 md:gap-10 md:w-auto">
             {["Images créées", "Suggestions Noblessa"].map((tab) => (
@@ -62,12 +63,12 @@ const LandingPageImages = () => {
           </button>
         </section>
 
-        {/* DropDown section */}
-        <div className="mx-auto w-full">
+        {/* Section SearchWithFilter centrée */}
+        <div className="flex-grow flex flex-col justify-center items-center w-full px-4">
           <SearchWithFilter TitleBtn={TitleBtn} />
         </div>
-        
-        {/* discover section */}
+
+        {/* Discover section */}
         <DecoverSection />
       </div>
     </div>

@@ -1,16 +1,15 @@
 import HeaderPage from "../Layouts/HeaderPage";
 import DecoverSection from "../Layouts/DecoverSection";
 import imaginationHero from "../assets/Img/heroImagination.png";
-// import { IoIosArrowDown } from "react-icons/io";
 import SearchWithFilter from "./SearchWithFilter";
 
 const LandingPageB = () => {
   const TitleBtn = "CRÉER";
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <HeaderPage />
 
-      {/* section 1 : imaginons */}
+      {/* Section 1 : Imaginons */}
       <div
         style={{ backgroundImage: `url(${imaginationHero})` }}
         className="w-full h-[350px] sm:h-[450px] bg-cover bg-center flex flex-col items-center justify-end"
@@ -26,13 +25,10 @@ const LandingPageB = () => {
         </div>
       </div>
 
-      {/* section 2 */}
-      <div className="flex flex-col gap-[10px] mx-auto"></div>
-      
-      {/* search avec filtre */}
-      <div className="mx-auto w-full">
-          <SearchWithFilter TitleBtn={TitleBtn} />
-        </div>
+      {/* Section de recherche centrée */}
+      <div className="flex-grow flex flex-col justify-center items-center w-full px-4">
+        <SearchWithFilter TitleBtn={TitleBtn} />
+      </div>
 
       <DecoverSection />
     </div>

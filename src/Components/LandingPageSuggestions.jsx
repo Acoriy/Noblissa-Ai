@@ -1,29 +1,33 @@
-import DecoverSection from "../Layouts/DecoverSection"
-import HeaderPage from "../Layouts/HeaderPage"
-import Imaginion from "../Layouts/Imaginion"
-import SearchWithFilter from "./SearchWithFilter"
+import DecoverSection from "../Layouts/DecoverSection";
+import HeaderPage from "../Layouts/HeaderPage";
+import Imaginion from "../Layouts/Imaginion";
+import SearchWithFilter from "./SearchWithFilter";
 import Textes from "../Layouts/Textes";
 
 const LandingPageSuggestions = () => {
-    const TitleBtn = "GÉNÉRER PLUS D’IMAGES"
+  const TitleBtn = "GÉNÉRER PLUS D’IMAGES";
+
   return (
-    <div>
-      <HeaderPage/>
-      {/* section 1 */}
-      <Imaginion/>
+    <div className="flex flex-col min-h-screen">
+      <HeaderPage />
+
+      {/* Section 1 */}
+      <Imaginion />
+
       {/* Section 2 */}
       <div>
-        <Textes/>
+        <Textes />
       </div>
-      {/* Section 3 */}
-      <div className="mx-auto w-full">
-          <SearchWithFilter TitleBtn={TitleBtn} />
-        </div>
+
+      {/* Section 3 : SearchWithFilter centré */}
+      <div className="flex-grow flex flex-col justify-center items-center w-full px-4">
+        <SearchWithFilter TitleBtn={TitleBtn} />
+      </div>
+
       {/* Section 4 */}
-      <DecoverSection/>
-
+      <DecoverSection />
     </div>
-  )
-}
+  );
+};
 
-export default LandingPageSuggestions
+export default LandingPageSuggestions;
