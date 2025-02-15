@@ -42,10 +42,10 @@ const Concepteure = () => {
                 </ul>
                 {/* btns */}
                 <div className="flex flex-col mx-auto md:mx-0 md:flex-row gap-[20px]">
-                  <button className="w-[191px] h-[40px] rounded-full text-[#fff] text-[12px] bg-Primary hover:bg-HoverColor tracking-[3%] font-normal">
+                  <button className="px-[20px] py-[10px] rounded-full text-[#fff] text-[12px] bg-Primary hover:bg-HoverColor tracking-[3%] font-normal">
                     PRENDRE RENDEZ-VOUS
                   </button>
-                  <button className="w-[191px] h-[40px] rounded-full text-[12px] border border-Primary border-x-2 border-y-2 text-Primary tracking-[3%] px-[20px] py-[10px] font-normal hover:text-HoverColor hover:border-HoverColor">
+                  <button className="rounded-full text-[12px] border border-Primary border-x-2 border-y-2 text-Primary tracking-[3%] px-[20px] py-[10px] font-normal hover:text-HoverColor hover:border-HoverColor">
                     TROUVER VOTRE MAGASIN
                   </button>
                 </div>
