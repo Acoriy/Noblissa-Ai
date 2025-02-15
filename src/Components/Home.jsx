@@ -173,7 +173,7 @@ const Home = () => {
   return (
     <div className="font-HelveticaNeue flex flex-col gap-[10px]">
       {/* Section Hero */}
-      <div
+      <header
         style={{ backgroundImage: `url(${Hero})` }}
         className="w-full h-full object-cover min-h-screen flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat relative"
       >
@@ -187,7 +187,7 @@ const Home = () => {
             Aménagements d&apos;intérieurs pour toute la maison.
           </p>
         </div>
-      </div>
+      </header>
 
       {/* Section Slider ----------------------------------------------------------- */}
       <div className="flex flex-col justify-center items-center px-[30px] md:h-[667px]">
@@ -270,7 +270,7 @@ const Home = () => {
               bains, des bibliothèques et des dressings durables, faits de
               lignes modernes et bâtis avec les meilleurs matériaux.
             </p>
-            <button className="text-xs sm:text-sm md:text-base tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
+            <button className="text-xs sm:text-sm md:text-base h-[40px] tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
               Découvrir notre savoir-faire
             </button>
           </div>
