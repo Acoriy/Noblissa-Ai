@@ -93,7 +93,7 @@ const PageTelechareger = () => {
                 notrepolitique de confidentialité.*
               </p>
             </div>
-            <Link to="/">
+            <Link to="/" className="mx-auto">
               <button className="mx-auto w-[130px] h-[40px] text-[12px]   text-[#fff] rounded-full bg-Primary hover:bg-HoverColor  transition-transform duration-300 ease-in-out">
                 TÉLÉCHARGER
               </button>
