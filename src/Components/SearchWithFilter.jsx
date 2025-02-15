@@ -31,7 +31,7 @@ const SearchWithFilter = ({ TitleBtn }) => {
       </div>
 
       {/* Filtres dynamiques */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
+      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
         <div className="flex flex-col gap-4">
           <FilterDropdown
             title="Type de façade"

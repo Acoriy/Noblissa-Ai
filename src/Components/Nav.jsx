@@ -47,7 +47,7 @@ const Navbar = () => {
 
           <GrFavorite className="w-[24px] md:h-[24px] hover:text-Primary cursor-pointer hidden md:block" />
 
-          <Link to="/téléchargez">
+          <Link to="/">
               <button className="w-[129px] md:w-[191px] md:h-[40px] text-white text-[12px] tracking-[3%] px-[20px] bg-[#A48145] rounded-full hover:bg-HoverColor flex-wrap">
                 PRENDRE RENDEZ-VOUS
               </button>
