@@ -6,7 +6,7 @@ const FilterDropdown = ({ title, options = [], selected, setSelected }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative w-full max-w-[411px]">
+    <div className="relative  w-auto">
       {/* Conteneur du dropdown */}
       <div
         className={`h-[45px] flex flex-row justify-between items-center py-[12px] px-[10px] rounded-full cursor-pointer transition-all 
