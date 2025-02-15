@@ -92,7 +92,7 @@ const SearchWithFilter = ({ TitleBtn }) => {
         </div>
 
         {/* Bouton de validation */}
-        <button className="w-full max-w-[300px] bg-Primary hover:bg-HoverColor transition-all text-white text-[12px] font-normal rounded-full h-[45px] mt-8 py-[10px]">
+        <button className="w-full max-w-[300px] bg-Primary hover:bg-HoverColor transition-all text-white text-[12px] font-normal rounded-full h-[40px] mt-8 py-[10px]">
           {TitleBtn}
         </button>
       </div>
