@@ -270,7 +270,7 @@ const Home = () => {
               bains, des bibliothèques et des dressings durables, faits de
               lignes modernes et bâtis avec les meilleurs matériaux.
             </p>
-            <button className="text-xs sm:text-sm md:text-base tracking-wide font-normal w-40 sm:w-48 md:w-56 h-10 md:h-12 px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
+            <button className="text-xs sm:text-sm md:text-base tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
               Découvrir notre savoir-faire
             </button>
           </div>

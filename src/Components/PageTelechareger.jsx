@@ -70,7 +70,7 @@ const PageTelechareger = () => {
           </div>
           <div className="relative w-[324px] h-[41px] md:w-[450px]">
             <input
-              type="number"
+              type="text"
               required
               className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
             />
