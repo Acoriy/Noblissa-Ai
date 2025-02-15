@@ -14,9 +14,9 @@ const SearchWithFilter = ({ TitleBtn }) => {
   const [atmosphere, setAtmosphere] = useState("Confortable");
 
   return (
-    <div className="flex flex-col items-center px-4 sm:px-8 lg:px-12 w-full max-w-[1200px] mx-auto">
+    <div className="flex flex-col items-center px-4 sm:px-6 lg:px-12 w-full max-w-screen-lg mx-auto">
       {/* Navigation entre catégories */}
-      <div className="flex flex-row justify-center items-center w-full gap-5 sm:gap-8 h-[50px] mb-6">
+      <div className="flex justify-center items-center w-full gap-5 sm:gap-8 h-[50px] mb-6">
         {["Cuisines", "Salon", "Salle de bains"].map((tab) => (
           <span
             key={tab}
@@ -31,7 +31,7 @@ const SearchWithFilter = ({ TitleBtn }) => {
       </div>
 
       {/* Filtres dynamiques */}
-      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
+      <div className="w-full mx-auto grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div className="flex flex-col gap-4">
           <FilterDropdown
             title="Type de façade"
