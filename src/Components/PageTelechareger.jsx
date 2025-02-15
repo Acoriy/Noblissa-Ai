@@ -6,104 +6,59 @@ import HeroTelechargez from "../assets/Img/HeroTelecharger.png";
 
 const PageTelechareger = () => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col min-h-screen">
       <HeaderPage />
-      {/* contenu de a page : */}
-      <div className="flex flex-col gap-[15px]">
-        {/* section image  */}
-        <div
-          style={{ backgroundImage: `url(${HeroTelechargez})` }}
-          className="w-full h-[450px] bg-cover bg-center flex flex-col items-center justify-end"
-        >
-          <div className="flex flex-col justify-center items-center gap-5 w-full max-w-[90%] sm:max-w-[841px] h-[182px] min-h-[193px] text-white bg-[rgba(255,255,255,0.2)] backdrop-blur-sm p-6 rounded-xl">
-            <h1 className="text-[32px] sm:text-[50px] font-normal font-bodoni leading-[110%] text-center">
-              Téléchargez <br /> votre visuel d&apos;inspiration
-            </h1>
+
+      {/* Section Image */}
+      <div
+        style={{ backgroundImage: `url(${HeroTelechargez})` }}
+        className="w-full h-[300px] sm:h-[450px] bg-cover bg-center flex items-center justify-center"
+      >
+        <div className="w-[90%] max-w-[841px] bg-[rgba(255,255,255,0.2)] backdrop-blur-sm p-6 rounded-xl text-white text-center">
+          <h1 className="text-xl sm:text-4xl font-bodoni leading-tight">
+            Téléchargez <br /> votre visuel d&apos;inspiration
+          </h1>
+        </div>
+      </div>
+
+      {/* Formulaire */}
+      <form className="flex flex-col gap-6 p-5 sm:p-8 max-w-lg mx-auto w-full">
+        {["Nom", "Prénom", "Mail", "Téléphone", "Code postal"].map((label, index) => (
+          <div key={index} className="relative w-full">
+            <input
+              type={label === "Téléphone" ? "number" : "text"}
+              required
+              className="peer w-full py-2 border-b-2 border-gray-400 bg-transparent text-base text-gray-700 focus:outline-none focus:border-Primary"
+            />
+            <label className="absolute left-0 bottom-2 text-gray-500 text-sm transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
+              {label}*
+            </label>
+          </div>
+        ))}
+
+        {/* Consentement */}
+        <div className="flex flex-col gap-3 text-xs sm:text-sm">
+          <span className="text-gray-600">* Champs obligatoires</span>
+          <div className="flex items-start gap-2">
+            <input type="checkbox" className="w-4 h-4 mt-1" />
+            <p className="text-gray-700">
+              En utilisant ce formulaire, vous consentez au stockage et au traitement de vos données afin de répondre à votre demande. Consultez notre politique de confidentialité.*
+            </p>
           </div>
         </div>
 
-        {/* Section Form : */}
-        <form className="flex flex-col gap-[40px] p-5 justify-center  mx-auto pb-[15px] md:pb-0">
-          {/* inputs */}
+        {/* Bouton */}
+        <div className="flex justify-center">
+          <Link to="/">
+            <button className="px-6 py-2 text-white rounded-full bg-Primary hover:bg-HoverColor transition-transform duration-300 ease-in-out">
+              TÉLÉCHARGER
+            </button>
+          </Link>
+        </div>
+      </form>
 
-          <div className="relative w-[324px] h-[41px] md:w-[450px]">
-            <input
-              type="text"
-              required
-              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
-            />
-            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
-              Nom*
-            </label>
-          </div>
-
-          <div className="relative w-[324px] h-[41px] md:w-[450px]">
-            <input
-              type="text"
-              required
-              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
-            />
-            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
-            Prénome*
-            </label>
-          </div>
-
-          <div className="relative w-[324px] h-[41px] md:w-[450px]">
-            <input
-              type="text"
-              required
-              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
-            />
-            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
-            Mail*
-            </label>
-          </div>
-          <div className="relative w-[324px] h-[41px] md:w-[450px]">
-            <input
-              type="number"
-              required
-              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
-            />
-            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
-            Téléphone*
-            </label>
-          </div>
-          <div className="relative w-[324px] h-[41px] md:w-[450px]">
-            <input
-              type="text"
-              required
-              className="peer w-full h-full outline-none text-[18px] md:text-[26px] font-light text-Textcolor border-b-2 border-gray-400 bg-transparent transition-all duration-300 focus:border-Primary focus:placeholder-transparent"
-            />
-            <label className="absolute left-0 bottom-1 text-gray-500 text-[18px] md:text-[26px] transition-all duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:opacity-100 peer-focus:-translate-y-6 peer-focus:text-Primary peer-focus:opacity-100">
-            Code postal*
-            </label>
-          </div>
-         
-          {/* parte 2 */}
-          <div className="flex flex-col gap-[12px] md:gap-[14px]">
-            <span className="font-light text-[10px] leading-[10px] md:text-[12px] md:leading-[20px] ">
-              * champs obligatoires
-            </span>
-            <div className="flex flex-row gap-[15px] md:gap-[12px]">
-              <input type="checkbox" className="w-[14px] h-[14px]" />
-              <p className="font-light text-[10px] w-[313px] md:w-[420px] md:text-[12px] leading-[16px] md:leading-[20px] text-Textcolor">
-                En utilisant ce formulaire, vous consentez au stockage et au
-                traitement de vos données par noblessa afin de répondre à votre
-                demande de candidature. Pour plus d&apos;information, consulter
-                notrepolitique de confidentialité.*
-              </p>
-            </div>
-            <Link to="/" className="mx-auto">
-              <button className="mx-auto w-[130px] h-[40px] text-[12px]   text-[#fff] rounded-full bg-Primary hover:bg-HoverColor  transition-transform duration-300 ease-in-out">
-                TÉLÉCHARGER
-              </button>
-            </Link>
-          </div>
-        </form>
-
-        <Concepteure />
-        <DecoverSection />
-      </div>
+      <Concepteure />
+      <DecoverSection />
     </div>
   );
 };

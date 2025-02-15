@@ -21,12 +21,12 @@ const LandingPageImages = () => {
       <HeaderPage />
       {/* contenu de la page */}
       <div className="flex flex-col gap-[15px]">
-        {/* section 1 : imaginons*/}
+        {/* section 1 : imaginons */}
         <Imaginion />
 
         <section className="mx-auto flex flex-col items-center gap-6 pt-6 w-full px-4 ">
           {/* En-tête avec les titres */}
-          <div className="flex flex-row w-full md:w-[340px]  justify-between items-center md:-translate-x-[430px]">
+          <div className="flex flex-row flex-wrap w-full justify-center gap-4 md:gap-10 md:w-auto">
             {["Images créées", "Suggestions Noblessa"].map((tab) => (
               <span
                 key={tab}
@@ -41,11 +41,11 @@ const LandingPageImages = () => {
           </div>
 
           {/* Grille responsive des images */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 w-full max-w-[1240px] justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 w-full max-w-[1240px] justify-center">
             {DataImages.map((img, index) => (
               <div
                 key={index}
-                className="w-full h-[340px] md:max-w-[305px] md:h-[305px]"
+                className="w-full h-[200px] sm:h-[250px] md:h-[305px] lg:h-[340px]"
               >
                 <img
                   src={img}
@@ -57,14 +57,14 @@ const LandingPageImages = () => {
           </div>
 
           {/* Bouton de téléchargement */}
-          <button className="bg-Primary hover:bg-HoverColor transition-transform duration-300 ease-in-out text-white text-[12px] tracking-wide font-normal rounded-full w-[140px] h-[40px]">
+          <button className="bg-Primary hover:bg-HoverColor transition-transform duration-300 ease-in-out text-white text-[12px] tracking-wide font-normal rounded-full w-[140px] h-[40px] mt-6">
             TÉLÉCHARGER
           </button>
         </section>
 
         {/* DropDown section */}
         <SearchWithFilter TitleBtn={TitleBtn} />
-        {/* descover seaction : */}
+        {/* discover section */}
         <DecoverSection />
       </div>
     </div>
