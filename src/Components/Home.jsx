@@ -339,7 +339,7 @@ const Home = () => {
 
       {/* imagination votre prochaine lieux : ------------------- */}
 
-      <div className="w-full flex flex-col justify-center px-4 pb-[20px] relative">
+      <div className="w-full flex flex-col justify-center px-4 pb-[20px] relative md:mt-[20px]">
         {/* Icône Design (affichée uniquement sur desktop) */}
         <img
           src={iconDesignImagin}
