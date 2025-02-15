@@ -14,9 +14,9 @@ const SearchWithFilter = ({ TitleBtn }) => {
   const [atmosphere, setAtmosphere] = useState("Confortable");
 
   return (
-    <div className="flex flex-col items-center px-4 sm:px-8 lg:px-12">
+    <div className="flex flex-col items-center px-4 sm:px-8 lg:px-12 w-full max-w-[1200px] mx-auto">
       {/* Navigation entre catégories */}
-      <div className="flex flex-row justify-center items-center w-full gap-[20px] sm:gap-[31px] h-[50px] mb-4">
+      <div className="flex flex-row justify-center items-center w-full gap-5 sm:gap-8 h-[50px] mb-6">
         {["Cuisines", "Salon", "Salle de bains"].map((tab) => (
           <span
             key={tab}
@@ -31,25 +31,14 @@ const SearchWithFilter = ({ TitleBtn }) => {
       </div>
 
       {/* Filtres dynamiques */}
-      <div className="flex flex-col sm:flex-row gap-[20px] mt-4 w-full">
-        <div className="flex flex-col gap-[10px] w-full sm:w-[48%]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full">
+        <div className="flex flex-col gap-4">
           <FilterDropdown
             title="Type de façade"
             options={[
-              "Blanc",
-              "Gris",
-              "Noir",
-              "Beige",
-              "Rouge",
-              "Rouge clair",
-              "Vert",
-              "Vert clair",
-              "Bleu",
-              "Bleu clair",
-              "Bois",
-              "Pierre",
-              "Béton",
-              "Métallique",
+              "Blanc", "Gris", "Noir", "Beige", "Rouge", "Rouge clair",
+              "Vert", "Vert clair", "Bleu", "Bleu clair", "Bois",
+              "Pierre", "Béton", "Métallique",
             ]}
             selected={facadeType}
             setSelected={setFacadeType}
@@ -73,7 +62,7 @@ const SearchWithFilter = ({ TitleBtn }) => {
             setSelected={setFlooring}
           />
         </div>
-        <div className="flex flex-col gap-[10px] w-full sm:w-[48%]">
+        <div className="flex flex-col gap-4">
           <FilterDropdown
             title="Style"
             options={["Campagne", "Moderne", "Scandinave", "Industriel", "Méditerranéen"]}
@@ -102,7 +91,7 @@ const SearchWithFilter = ({ TitleBtn }) => {
       </div>
 
       {/* Bouton de validation */}
-      <button className="mx-auto bg-Primary hover:bg-HoverColor transition-transform duration-300 ease-in-out text-white text-[12px] sm:text-[14px] font-normal rounded-full w-fit h-[40px] my-[30px] py-[10px] px-[20px]">
+      <button className="w-full max-w-[300px] bg-Primary hover:bg-HoverColor transition-all text-white text-[14px] font-normal rounded-full h-[45px] mt-8 py-[10px]">
         {TitleBtn}
       </button>
     </div>
