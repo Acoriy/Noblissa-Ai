@@ -21,13 +21,13 @@ const LandingPageImages = () => {
       <HeaderPage />
 
       {/* contenu de la page */}
-      <div className="flex flex-col gap-[15px] flex-grow">
+      <div className="flex flex-col gap-[15px] md:gap-[30px] flex-grow">
         {/* section 1 : imaginons */}
         <Imaginion />
 
         <section className="mx-auto flex flex-col items-center gap-6 pt-6 w-full px-4">
           {/* En-tête avec les titres */}
-          <div className="flex flex-row flex-wrap w-full justify-center gap-4 md:gap-10 md:w-auto">
+          <div className="flex flex-row flex-wrap w-full  justify-center  gap-4 md:gap-10 md:w-auto">
             {["Images créées", "Suggestions Noblessa"].map((tab) => (
               <span
                 key={tab}
