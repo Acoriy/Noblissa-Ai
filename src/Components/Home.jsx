@@ -270,7 +270,7 @@ const Home = () => {
               bains, des bibliothèques et des dressings durables, faits de
               lignes modernes et bâtis avec les meilleurs matériaux.
             </p>
-            <button className="text-xs sm:text-sm md:text-base h-[40px] tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
+            <button className="text-[12px] w-fit h-[40px] tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
               Découvrir notre savoir-faire
             </button>
           </div>
@@ -380,7 +380,7 @@ const Home = () => {
 
       {/* Accompagement , Garantie , Surclassement */}
 
-      <div className="md:h-[416px] flex flex-col md:flex-row items-center justify-center gap-[90px] md:gap-[120px] py-[20px] md:pb-[60px]">
+      <div className="md:h-[416px] flex flex-col md:flex-row items-center justify-center gap-[90px] md:gap-[120px] py-[20px] md:pb-[60px] mt-[30px] md:mt-0">
         {DataAcomp.map((item, index) => (
           <div
             key={index}
