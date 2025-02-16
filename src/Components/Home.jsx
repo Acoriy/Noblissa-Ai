@@ -380,7 +380,7 @@ const Home = () => {
 
       {/* Accompagement , Garantie , Surclassement */}
 
-      <div className="md:h-[416px] flex flex-col md:flex-row items-center justify-center gap-[90px] md:gap-[120px] py-[20px] md:pb-[60px] mt-[30px] md:mt-0">
+      <div className="mx-[20px] sm:mx-0 md:h-[416px] flex flex-col md:flex-row items-center justify-center gap-[90px] md:gap-[120px] py-[20px] md:pb-[60px] mt-[30px] md:mt-0">
         {DataAcomp.map((item, index) => (
           <div
             key={index}
