@@ -398,7 +398,9 @@ const Home = () => {
       </div>
 
       {/* Renconter votre concipteure  */}
-      <Concepteure />
+      <div className="pt-[60px]">
+        <Concepteure />
+      </div>
 
       {/*Découvrez tous nos univers dans notre nouveau catalogue.  */}
       <DevoverSection />
