@@ -27,7 +27,7 @@ const LandingPageImages = () => {
 
         <section className="mx-auto flex flex-col items-center gap-6 pt-6 w-full px-4">
           {/* En-tête avec les titres */}
-          <div className="flex flex-row flex-wrap w-full  justify-center  gap-4 md:gap-10 md:w-auto">
+          <div className="flex flex-row flex-wrap w-full  justify-between  md:translate-x-[-470px]  gap-4 md:gap-10 md:w-auto">
             {["Images créées", "Suggestions Noblessa"].map((tab) => (
               <span
                 key={tab}
