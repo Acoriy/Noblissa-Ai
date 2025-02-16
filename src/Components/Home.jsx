@@ -171,7 +171,7 @@ const Home = () => {
   };
 
   return (
-    <div className="font-HelveticaNeue flex flex-col gap-[10px]">
+    <div className="font-HelveticaNeue flex flex-col gap-[20px]">
       {/* Section Hero */}
       <header
         style={{ backgroundImage: `url(${Hero})` }}
@@ -339,7 +339,7 @@ const Home = () => {
 
       {/* imagination votre prochaine lieux : ------------------- */}
 
-      <div className="w-full flex flex-col justify-center px-4 pb-[20px] relative md:mt-[20px]">
+      <div className="w-full flex flex-col justify-center px-4 pb-[15px] relative">
         {/* Icône Design (affichée uniquement sur desktop) */}
         <img
           src={iconDesignImagin}
@@ -373,7 +373,7 @@ const Home = () => {
           <h1>Un idéal que l’on poursuit.</h1>
           <h1>Un sentiment que vous vivez.</h1>
         </div>
-        <button className="bg-Primary text-white w-[180px] md:w-[191px] text-[12px] h-[40px] rounded-full px-[20px] py-[10px] hover:bg-HoverColor transition-transform duration-300 ease-in-out">
+        <button className="bg-Primary text-white w-[200px] md:w-[191px] text-[12px] h-[40px] rounded-full px-[20px] py-[10px] hover:bg-HoverColor transition-transform duration-300 ease-in-out">
           PRENDRE RENDEZ-VOUS
         </button>
       </div>

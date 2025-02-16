@@ -39,7 +39,7 @@ const SuggestionsGrid = () => {
   return (
     <div className="max-w-full sm:max-w-[1200px] mx-auto mt-8 px-[20px] sm:px-[40px] md:px-0">
       {/* Titre de la section */}
-      <div className="flex flex-col sm:flex-row justify-between text-[14px] sm:text-[16px] font-medium mb-4 sm:mb-6">
+      <div className="flex flex-row sm:flex-row justify-between md:justify-start md:gap-[40px] text-[14px] sm:text-[16px] font-medium mb-4 sm:mb-6">
         {["Images créées", "Suggestions Noblessa"].map((tab) => (
           <span
             key={tab}
