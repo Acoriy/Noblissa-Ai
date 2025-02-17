@@ -56,30 +56,30 @@ const Footer = () => {
             {/* <h3 className="text-lg font-bold mb-4">Nos aménagements</h3> */}
             <ul className="space-y-[20px] md:space-y-[30px]">
               <li>
-                <a href="/matieres" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Nos aménagements
                 </a>
               </li>
               <li>
                 <a
-                  href="/savoir-faire"
+                  href="#"
                   className="text-sm hover:text-HoverColor"
                 >
                   Nos matières
                 </a>
               </li>
               <li>
-                <a href="/marque" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Notre savoir-faire
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 La marque
                 </a>
               </li>
               <li>
-                <a href="/blog" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Le blog du Beau Vivre
                 </a>
               </li>
@@ -91,27 +91,27 @@ const Footer = () => {
           <div className=" w-[300px]  flex flex-col  gap-[20px] md:gap-[30px] font-light tracking-[3%] text-[14px] md:text-[16px] ">
             <ul className="space-y-[20px] md:space-y-[30px]">
               <li>
-                <a href="/emplois" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Pour les professionnels
                 </a>
               </li>
               <li>
-                <a href="/magasin" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Emplois
                 </a>
               </li>
               <li>
-                <a href="/monde" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 Ouvrir un magasin
                 </a>
               </li>
               <li>
-                <a href="/domicile" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 noblessa dans le monde
                 </a>
               </li>
               <li>
-                <a href="/domicile" className="text-sm hover:text-HoverColor">
+                <a href="#" className="text-sm hover:text-HoverColor">
                 noblessa à domicile
                 </a>
               </li>

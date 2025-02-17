@@ -12,7 +12,7 @@ const PageTelechareger = () => {
       {/* Section Image */}
       <div
         style={{ backgroundImage: `url(${HeroTelechargez})` }}
-        className="w-full h-[250px] sm:h-[450px] md:h-[500px] bg-cover bg-center flex items-center justify-center"
+        className="w-full h-[250px] sm:h-[450px] md:h-[500px] bg-cover bg-center flex items-end justify-center"
       >
         <div className="w-[90%] max-w-[841px] bg-[rgba(255,255,255,0.2)] backdrop-blur-sm p-6 rounded-xl text-white text-center">
           <h1 className="text-xl sm:text-3xl md:text-4xl font-bodoni leading-tight">
