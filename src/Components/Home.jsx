@@ -93,6 +93,7 @@ const DataAcomp = [
 
 // rencontrer votre concepteur assets :
 import Concepteure from "../Layouts/Concepteure";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const Slide = useRef(null);
@@ -270,9 +271,11 @@ const Home = () => {
               bains, des bibliothèques et des dressings durables, faits de
               lignes modernes et bâtis avec les meilleurs matériaux.
             </p>
-            <button className="text-[12px] w-fit h-[40px] tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
-              Découvrir notre savoir-faire
-            </button>
+            <Link to="/telechargez">
+              <button className="text-[12px] w-fit h-[40px] tracking-wide font-normal px-[20px] py-[10px] bg-Primary hover:bg-HoverColor transition-colors duration-300 ease-in-out text-white rounded-full mx-auto md:mx-0 mt-4 md:mt-6">
+                DÉCOUVRIR NOTRE SAVOIR-FAIRE
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -361,9 +364,11 @@ const Home = () => {
               En quelques clics, créez des images pour nourrir votre inspiration
               selon vos envies et imaginez votre projet.
             </p>
-            <button className="bg-Primary text-white w-[120px] sm:w-[140px] h-[40px] hover:bg-HoverColor transition-transform duration-300 ease-in-out text-[12px] font-normal rounded-full mx-auto">
-              DÉCOUVRIR
-            </button>
+            <Link to="/landingPageImages">
+              <button className="bg-Primary text-white w-[120px] sm:w-[140px] h-[40px] hover:bg-HoverColor transition-transform duration-300 ease-in-out text-[12px] font-normal rounded-full mx-auto">
+                DÉCOUVRIR
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -373,9 +378,11 @@ const Home = () => {
           <h1>Un idéal que l’on poursuit.</h1>
           <h1>Un sentiment que vous vivez.</h1>
         </div>
-        <button className="bg-Primary text-white w-[200px] md:w-[191px] text-[12px] h-[40px] rounded-full px-[20px] py-[10px] hover:bg-HoverColor transition-transform duration-300 ease-in-out">
-          PRENDRE RENDEZ-VOUS
-        </button>
+        <Link to="/telechargez">
+          <button className="bg-Primary text-white w-[200px] md:w-[191px] text-[12px] h-[40px] rounded-full px-[20px] py-[10px] hover:bg-HoverColor transition-transform duration-300 ease-in-out">
+            PRENDRE RENDEZ-VOUS
+          </button>
+        </Link>
       </div>
 
       {/* Accompagement , Garantie , Surclassement */}
@@ -398,8 +405,8 @@ const Home = () => {
       </div>
 
       {/* Renconter votre concipteure  */}
-    
-        <Concepteure />
+
+      <Concepteure />
 
       {/*Découvrez tous nos univers dans notre nouveau catalogue.  */}
       <DevoverSection />
